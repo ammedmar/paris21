@@ -17,10 +17,6 @@
 \renewbibmacro{in:}{}  % don't display "in:" before the journal name
 \AtEveryBibitem{\clearfield{pages}}  % don't show page numbers
 
-\addbibresource{aux/bibliography.bib}
-\addbibresource{aux/usualpapers.bib}
-\addbibresource{aux/mypapers.bib}
-
 \DeclareFieldFormat{title}{\myhref{\mkbibemph{#1}}}
 \DeclareFieldFormat
 [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
@@ -73,8 +69,8 @@
 \crefname{subsection}{\subsectionSymbol\!}{subsections}
 
 % layout
-\addtolength{\textwidth}{0in}
-\addtolength{\textheight}{0in}
+\addtolength{\textwidth}{2.1in}
+\addtolength{\textheight}{2in}
 \calclayout
 
 % update to MSC2020

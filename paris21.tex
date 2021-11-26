@@ -1,0 +1,30 @@
+\documentclass[9pt]{amsart}
+\usepackage{aux/style}
+\addbibresource{aux/usualpapers.bib}
+\addbibresource{aux/mypapers.bib}
+\addbibresource{aux/bibliography.bib}
+\input{aux/commands}
+
+\newcommand{\grantName}{\textit{MathInGreaterParis Fellowship Programme}}
+
+\title[Effective constructions in algebraic topology]{Effective constructions in algebraic topology \\ and applications to machine learning and lattice field theory}
+
+\author[A.~Medina-Mardones]{Anibal~M.~Medina-Mardones}
+\address{A.M-M., Max Planck Institute for Mathematics \and University of Notre Dame}
+\email{\href{mailto:ammedmar@mpim-bonn.mpg.de}{ammedmar@mpim-bonn.mpg.de}}
+
+\date{\today}
+
+\include{aux/figures}
+
+\begin{document}
+	\vspace*{-1.35cm}
+	\input{sec/abstract}
+	\maketitle
+	\thispagestyle{empty}
+	\input{sec/introduction}
+	\input{sec/past}
+	\input{sec/future}
+	\sloppy
+	\printbibliography
+\end{document}
