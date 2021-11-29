@@ -1,8 +1,8 @@
 % !TEX root = ../paris21.tex
 
-\section{Future work}
+\section{Future work} \label{s:future}
 
-\subsection{Explicit Lie models for connected spaces}
+\subsection{Explicit Lie models for connected spaces} \label{ss:lie models}
 
 Over $\Q$, a chain approximation to the diagonal can be symmetrized, giving rise to a cocommutative coalgebra structure on cellular chains.
 This coalgebra cannot be made simultaneously coassociative, but this relation can be imposed in a derive sense through a family of coherent chain homotopies -- which also respect certain symmetry constrains -- and give rise to a so called $C_\infty$-coalgebra structure.
@@ -36,25 +36,27 @@ The monoidal structure on the category of $A_\infty$-coalgebras is defined throu
 Unfortunately, the resulting $A_\infty$-coalgebra on $\gchains(\gcube)^{\ot 2}$ is not $C_\infty$.
 This could be corrected through an algebraic symmetrization of the associahedral diagonal, and deeper understanding of the space of diagonals of polytopes.
 
-\subsection{Fiber polytopes and Steenrod diagonals}
+\subsection{Fiber polytopes and Steenrod diagonals} \label{ss:polytopes}
 
-Together with Guillaume Laplante-Anfossi, a Ph.D. student at LAGA, and Bruno Vallete, his advisor, we are exploring the geometry of higher diagonals of convex polytopes.
-This work connects to higher category as pioneered by Kapranov--Voevodsky \cite{kapranov1991polycategories}.
-We have already achieved substantial progress in the study of higher diagonals using the notion of fiber polytopes \cite{billera1992fiber.polytopes}:
-We introduced a generalization of the Masuda--Thomas--Tonks--Vallette construction of a cellular diagonal from a quasi-positively oriented vector, to the construction of a Steenrod diagonal from an admissible orthonormal frame.
-This is a very exciting connection bringing convex geometry, higher categories, and homotopy theory closer together, and opening a vast area of research which we plan to explore in depth with the support of the \grantName.
+Together with Guillaume Laplante-Anfossi and Bruno Vallette we are exploring the geometry of higher diagonals of convex polytopes.
+This work connects to higher category in the form pioneered by Kapranov and Voevodsky \cite{kapranov1991polycategories}.
+We have already achieved substantial progress in the study of higher Steenrod diagonals using the notion of fiber polytopes \cite{billera1992fiber.polytopes}.
+Namely, we introduced a generalization of the Masuda--Thomas--Tonks--Vallette construction of a cellular diagonal from a admissible vector, to the construction of a Steenrod diagonal from an admissible orthonormal frame.
+This is a very exciting connection bringing convex geometry, higher categories, and homotopy theory closer together, from which a vast area of research opens.
+Several projects are growing from this connection whose completion will involve Ralph Kaufmann, Guillaume Laplante-Anfossi, Viktoriya Ozornova, Bruno Vallete and other researchers.
 
-\subsection{Odd prime Steenrod operations: persistence theory and Khovanov homology}
+\subsection{Odd prime Steenrod operations: persistence theory and Khovanov homology} \label{ss:odd prime steenrod operations}
 
 In work being finalized, with Federico Cantero-Mor\'{a}n we introduced a description of Steenrod operations at the simplicial cochain level that is dual to the one given in \cite{medina2021maysteenrod}.
 This is a generalization of the description in \cite{medina2021newformulas} of cup-$i$ products to cup-$(p,i)$ products.
-There are two sources of motivation for this.
-On one hand, for applications in persistent homology or computational topology more broadly, this description lends itself to a much faster algorithmic implementation.
-On the other, this dual description allowed Cantero-Mor\'an to define Steenrod operations at the even prime on Khovanov homology \cite{cantero-moran2020khovanov}.
+There are two sources of motivation for this result.
+On one hand, for applications in persistent homology or computational topology more broadly, this description leads to faster algorithms computing Steenrod operations of finite simplicial complexes, as illustrated for the even prime in \cite{medina2021newformulas}.
+On the other hand, this dual description allowed Cantero-Mor\'an to define Steenrod operations at the even prime on Khovanov homology \cite{cantero-moran2020khovanov}.
 We will use our dual description of cup $(p,i)$-products to define said operations on Khovanov homology at odd primes as well.
+We also plan to implement algorithms resulting from these formulae for the study of knots and links.
 This project will involved several graduate students and other young researcher, for which some financial support has already been secured.
 
-\subsection{Homotopical algebraic data analysis and AI}
+\subsection{Homotopical algebraic data analysis and AI} \label{ss:ai}
 
 Topology can complement traditional approaches to machine learning and data analysis by providing global summaries of complex relational structures.
 The added information is model-independent and highly resistant to noise.
@@ -70,11 +72,10 @@ This will enable to create performant topological regularizers that improve the 
 
 To quantify the topological complexity of these spaces and device such regularization procedures, developments from the sub-field of homotopical algebraic data analysis, such as Steenrod persistence modules, are fundamental.
 Gr\'egory Ginot (supporting this application) has made substantial contributions to this rapidly growing field \cite{ginot2021multiplicative}.
-Together with part of \texttt{giotto-tda}'s team, Gr\'egory, and some of his collaborators in the Grand Paris area, we will develop -- at all stages from theory and algorithms to implementation and deployment -- novel homotopical invariants that can be used for these and similar challenges.
+Together with part of \giottoTDA's team, Gr\'egory, and some of his collaborators in the Grand Paris area, we will develop -- at all stages from theory and algorithms to implementation and deployment -- novel homotopical invariants that can be used for these and similar challenges.
 International collaborations are also envision, in particular, with the Laboratory for Topology and Neuroscience at EPFL, where as a member I wrote the mathematical content of a grant on this topic awarded for over 1 million USD.
 
-
-\subsection{Symmetry protected topological phases and cochain constructions}
+\subsection{Symmetry protected topological phases and cochain constructions} \label{ss:spt phases}
 
 A central problem in physics is to define and understand the moduli ``space'' of quantum systems with a fixed set of invariants, for example their dimension and symmetry type.
 In condensed matter physics, quantum systems are presented using \textit{lattice models} which, intuitively, are given by a Hamiltonian presented as a sum of local terms on a Hilbert space associated to a lattice in $\R^n$.
@@ -91,57 +92,3 @@ Another important viewpoint on topological field theories is provided by the the
 With the support of the \grantName\ we will deepen the understanding of SPT phases by connecting these multiple point of view: lattice models, discrete gauge theories, stable homotopy theory, functorial field theories, and factorization algebras.
 This is a long term project, but a first concrete objective is the description of the signature of 4 manifolds through a combinatorial local state sum formula.
 Dennis Sullivan and Andrew Ranicki have partial results in general $4k$-dimensions \cite{sullivan1976signature}, and the importance of this question in 4 dimensions has been highlighted by Peter Teichner here at the MPIM.
-
-%\subsection{Foundations of geometric (co)homology} \label{ss:foundations}
-%
-%The use of manifold-like objects to represent homology and cohomology classes has a long history and many technical subtleties.
-%In \cite{medina2021foundations}, with G. Friedman and D. Sinha we further develop one such theory for smooth manifolds based on maps from manifolds with corners.
-%As an application of these foundations, we expect to extend our work relating transverse intersection and the cup product of cubical cochains (\cref{ss:flows}) to an entire $E_\infty$-structure.
-%More explicitly, we expect to introduce further coherent vector fields to model geometrically the $E_\infty$-structure defined in \cite{medina2021cubical}.
-
-%\subsection{Cochain level secondary operations}
-%
-%Building on our work described in \cref{ss:cartan} and \cref{ss:adem} constructing cochains that enforce the Cartan and Adem relations of Steenrod operations with mod $2$ coefficients, we will generalize these, using the formulas of \cite{medina2021maysteenrod}, to Steenrod operations over all primes.
-%This will allow for the effective description of secondary operations and the approximation via chain complexes of certain Postnikov towers, as done for the Spin bordism spectrum in \cite{brumfiel2016pontrjagin, brumfiel2018pontrjagin}.
-%
-%\subsection{Topological lattice field theory}
-%
-%I organize a seminar at the Max Planck Institute exploring the connections between combinatorial topology and topological quantum field theory.
-%Given that Steenrod \mbox{cup-$i$} products and their Adem and Cartan coboundaries feature centrally on certain field theories \cite{gaiotto2016spin, kapustin2017fermionic, barkeshli2021classification}, we expect to use the newly introduced cup-$(p,i)$ products and their Cartan and Adem cochains in the construction of new theories.
-
-%\subsection{Multisimplicial cup product}
-%
-%Following a suggestion by P.~May, with A.~Pizzi and P.~Salvatore, we define in upcoming work an $E_\infty$-structure on multisimplicial cochains \cite{medina2021multisimplicial}.
-%This structure generalizes the $E_\infty$-structures defined on simplicial and cubical cochains discussed in \cref{ss:e-infty structures}.
-
-%\subsection{Higher categories}
-%
-%In higher category theory, the paper \cite{medina2020globular} constructs a functor producing strict $\infty$-categories from group-like cup-i coalgebras.
-%In particular, the cup-$i$ constructions on simplices and cubes define, respectively, the Street nerve and cubical nerve of strict $\infty$-categories.
-%We anticipate that the more general Steenrod $(p,i)$-products constructed in \cite{medina2021maysteenrod} will also have deep combinatorial interpretations in category theory which we are currently exploring.
-
-%\subsection{Dyer-Lashof operations}
-%
-%Configuration space of $r$ points in $\mathbb R^n$ are objects of central topological interest related to loop spaces, knots, and deformation theory.
-%Recently, they have also found applications in motion planning and robotics through the concept of topological complexity \cite{farber2003motion.planning}.
-%The homology of these spaces is a crucial invariant and we expect to identify chain level representatives for these classes on combinatorial models of the $E_n$-operads.
-%This work is based on constructions in the $E_\infty$ case discussed in \cref{ss:may steenrod}.
-
-%\subsection{Representation and cohomology of categories}
-%
-%The theory of representations and cohomology of groups can be recasted in terms of (Hopf) group rings.
-%Many of the results in this theory extend naturally to quivers and (small) categories but not all.
-%In particular, some important functoriality properties are lost in all current generalizations from groups to categories.
-%In work to appear, I argue that to prevent this loss one should consider the $E_2$-coalgebra structure carried by the chains on the nerve of the category.
-%When the category is a group, this corresponds to considering the $E_2$-coalgebra structure on the bar construction of the group algebra.
-%
-%\subsection{Free loop spaces and string topology}
-%
-%In \cite{medina2021cobar} we provided an $E_\infty$-model for the based loop space of non-necessarily simply-connected spaces.
-%In future work we will obtain a similar model for the chains on the free loop space, which may be thought of as a twisted tensor product of two $E_\infty$-coalgebras.
-%Then we will incorporate Poincar\'{e} duality and try to recover string topology in the non-simply connected case with all of its subtleties.
-%
-%\subsection{\pdfEinfty-algebras and $L$-theory}
-%
-%With Manuel Rivera and Mahmoud Zeinalian we expect to combine the algebraic structures describing homotopy types \cite{sullivan1977infinitesimal, mandell2001padic} and those developed by Ranicki \cite{ranicki1992topological} for the classification of topological manifold structures.
-%Substantial partial results in this direction can be found in their paper \cite{rivera2018rigidification} and my thesis \cite{medina2015thesis}.
